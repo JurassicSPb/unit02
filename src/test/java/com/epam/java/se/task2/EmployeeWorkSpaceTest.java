@@ -50,7 +50,7 @@ public class EmployeeWorkSpaceTest {
         workSpace.addStationery(new Stationery("Paper", Integer.MAX_VALUE));
         workSpace.addStationery(new Stationery("Clipboard", 50));
 
-        System.out.println(workSpace.calculateSum());
+        System.out.println(workSpace.calculateSum()); 
     }
 
 }
