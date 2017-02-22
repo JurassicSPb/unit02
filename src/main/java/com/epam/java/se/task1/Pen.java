@@ -23,6 +23,9 @@ public class Pen {
     }
 
     public int getPrice() {
+        if (price<0){
+            return 0;
+        }
         return price;
     }
 
@@ -37,6 +40,7 @@ public class Pen {
     public void setPrice(int price) {
         this.price = price;
     }
+
     public boolean equals(Object obj) {
         if(obj == null) {
             return false;
