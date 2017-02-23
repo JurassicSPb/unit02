@@ -1,4 +1,4 @@
-package com.epam.java.se.task3_4;
+package com.epam.java.se.task3;
 
 /**
  * Created by Мария on 23.02.2017.

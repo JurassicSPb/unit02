@@ -1,4 +1,4 @@
-package com.epam.java.se.task3_4;
+package com.epam.java.se.task3;
 
 import com.epam.java.se.task2.Stationery;
 

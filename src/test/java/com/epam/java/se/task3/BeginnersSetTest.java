@@ -1,4 +1,4 @@
-package com.epam.java.se.task3_4;
+package com.epam.java.se.task3;
 
 import org.junit.Test;
 
@@ -20,6 +20,9 @@ public class BeginnersSetTest {
     @Test
     public void beginnersSetTest() throws Exception{
         BeginnersSet b = new BeginnersSet();
+
         System.out.println(b);
+
+
     }
 }
