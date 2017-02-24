@@ -35,6 +35,7 @@ public class GroupsOfStudentsTest {
         groupPhysics.addStudent(student6, new Mark<>(8.8));
         groupPhysics.addStudent(student5, new Mark<>(3.4));
         groupPhysics.addStudent(student2, new Mark<>(11.7));
+        groupPhysics.addStudent(student5, new Mark<>(5.7));
 
         GroupManager gm = new GroupManager();
         gm.setGroup(groupMaths);
