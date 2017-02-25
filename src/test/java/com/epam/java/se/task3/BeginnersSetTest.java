@@ -14,6 +14,13 @@ public class BeginnersSetTest {
         assertFalse(n.getPrice()==-20);
     }
     @Test
+    public void notNullTest() throws Exception{
+        BeginnersSet b = new BeginnersSet();
+        for (int i=0; i<b.size(); i++) {
+            assertTrue(b.get(i)!=null);
+        }
+    }
+    @Test
     public void paperProductTest() throws Exception{
         Notebook n = new Notebook("Notebook", 20, 300, "black");
         n.changeNumberOfPages(50);
@@ -33,13 +40,9 @@ public class BeginnersSetTest {
     @Test
     public void beginnersSetTest() throws Exception{
         BeginnersSet b = new BeginnersSet();
+
         System.out.println(b);
 
-        for (int i=0; i<b.size(); i++){
-            assertTrue(b.get(2).getName().equals("Casio"));
-        }
-
-
-
+        assertTrue(b.get(2).getName().equals("Casio"));
     }
 }
