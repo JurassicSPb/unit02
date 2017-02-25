@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 /**
  * Created by Мария on 25.02.2017.
  */
-public class SubmarineTest {
+public class SubmarineAndAnnotationTest {
     @Test
     public void build() throws Exception{
         Submarine submarine = Submarine.newSubmarine()
