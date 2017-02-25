@@ -8,6 +8,15 @@ import org.junit.Test;
  */
 public class GroupsOfStudentsTest {
     @Test
+    public void contractTest() throws Exception{
+        Student student = new Student(null);
+        Student student2 = new Student("aaa");
+        Group groupMaths = new Group(Discipline.MATHEMATICS);
+        groupMaths.addMark(student, 5.6);
+        groupMaths.addMark(student, 10);
+    }
+
+    @Test
     public void groupsTest() throws Exception{
 
         Student student = new Student("Vasya");
