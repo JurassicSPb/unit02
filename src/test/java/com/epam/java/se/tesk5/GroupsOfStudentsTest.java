@@ -39,6 +39,7 @@ public class GroupsOfStudentsTest {
         groupInformatics.addMark(student4, 2.7);
         groupInformatics.addMark(student5, 3.1);
         groupInformatics.addMark(student2, 2.9);
+        groupInformatics.addMark(student3, 1.9);
 
         Group groupPhysics = new Group(Discipline.PHYSICS);
         groupPhysics.addMark(student, 4.6);
