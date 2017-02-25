@@ -1,6 +1,5 @@
-package com.epam.java.se.tesk5;
+package com.epam.java.se.task5;
 
-import com.epam.java.se.task5.*;
 import org.junit.Test;
 
 /**
