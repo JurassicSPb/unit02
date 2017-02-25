@@ -20,6 +20,5 @@ public class SubmarineTest {
         assertTrue(submarine.isMoving());
 
         System.out.println(submarine.getClass().getAnnotation(SubmarineAnnotation.class));
-        
     }
 }
