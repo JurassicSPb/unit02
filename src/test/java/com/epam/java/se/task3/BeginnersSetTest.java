@@ -8,15 +8,20 @@ import org.junit.Test;
  */
 public class BeginnersSetTest {
     @Test
-    public void paperProductTest() throws Exception{
+    public void contractTest()throws Exception{
         Notebook n = new Notebook("Notebook", -20, 300, "black");
-        System.out.println(n.toString());
+
+        assertFalse(n.getPrice()==-20);
+    }
+    @Test
+    public void paperProductTest() throws Exception{
+        Notebook n = new Notebook("Notebook", 20, 300, "black");
         n.changeNumberOfPages(50);
         System.out.println(n.toString());
 
-        OfficePaper o = new OfficePaper("Svetocopy", 400, 3, "A4");
-        n.changeNumberOfPages(-500);
-        System.out.println(o.toString());
+        assertTrue(n.getName().equals("Notebook"));
+        assertTrue(n.getNumberOfPages()==50);
+
     }
     @Test
     public void calculationToolTest() throws Exception{
@@ -28,8 +33,12 @@ public class BeginnersSetTest {
     @Test
     public void beginnersSetTest() throws Exception{
         BeginnersSet b = new BeginnersSet();
-
         System.out.println(b);
+
+        for (int i=0; i<b.size(); i++){
+            assertTrue(b.get(2).getName().equals("Casio"));
+        }
+
 
 
     }
