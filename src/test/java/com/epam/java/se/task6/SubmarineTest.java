@@ -1,5 +1,6 @@
 package com.epam.java.se.task6;
 
+import com.epam.java.se.task7.SubmarineAnnotation;
 import org.junit.Test;
 import static org.junit.Assert.*;
 /**
@@ -17,5 +18,8 @@ public class SubmarineTest {
         System.out.println(submarine.toString());
 
         assertTrue(submarine.isMoving());
+
+        System.out.println(submarine.getClass().getAnnotation(SubmarineAnnotation.class));
+        
     }
 }
